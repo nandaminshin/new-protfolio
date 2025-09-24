@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Sun, Moon } from "lucide-react";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
