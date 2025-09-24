@@ -3,7 +3,6 @@ import { Sun, Moon } from "lucide-react";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [darkMode, setDarkMode] = useState(true);
 
     const navItems = [
         { name: "Overview", href: "#overview" },
@@ -18,7 +17,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             {/* Logo */}
-            <div className="logo">MR</div>
+            <div className="logo">ND</div>
 
             {/* Desktop Menu */}
             <ul className="menu">
@@ -30,8 +29,8 @@ const Navbar = () => {
             </ul>
 
             {/* Theme Toggle */}
-            <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
-                {darkMode ? <Sun size={18} /> : <Moon size={18} />}
+            <button className="theme-toggle">
+                <img src="/images/dubu-icon.png" alt="" width={30} height={30} />
             </button>
 
             {/* Mobile Menu Button */}
