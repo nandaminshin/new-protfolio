@@ -27,10 +27,7 @@ const Navbar = () => {
                 ))}
             </ul>
 
-            {/* Theme Toggle */}
-            <button className="theme-toggle">
-                <img src="/images/dubu-icon.png" alt="" width={30} height={30} />
-            </button>
+            <img src="/images/dubu-icon.png" alt="" width={52} height={52} />
 
             {/* Mobile Menu Button */}
             <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
