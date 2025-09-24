@@ -1,13 +1,13 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 
 const Hero = () => {
     return (
         <section className="hero">
             {/* Name */}
-            <h1 className="hero-title">Muhammad Ramazan</h1>
+            <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 tracking-tight pb-8">Nanda Min Shin</h1>
 
             {/* Gradient Role Badge */}
-            <div className="role-badge">Full Stack Developer</div>
+            <div className="role-badge">Software Engineer</div>
 
             {/* Description */}
             <p className="hero-desc">
@@ -17,19 +17,30 @@ const Hero = () => {
 
             {/* Social Links */}
             <div className="social-links">
-                <a href="https://github.com" target="_blank" rel="noreferrer">
+                <a href="https://github.com/nandaminshin" target="_blank" rel="noreferrer">
                     <Github size={18} /> GitHub
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/nanda-min-shin-322a90315/" target="_blank" rel="noreferrer">
                     <Linkedin size={18} /> LinkedIn
                 </a>
                 <a href="mailto:test@example.com">
                     <Mail size={18} /> Email
                 </a>
+                <a
+                    href="/cv/NandaMinShinCV.pdf"
+                    download
+                >
+                    <Download />
+                    Download CV
+                </a>
             </div>
 
             {/* Availability */}
             <div className="availability">● Available for projects</div>
+
+            <div className="p-12">
+                <img src="/images/circle-profile.png" alt="" width={360} height={360} />
+            </div>
         </section>
     );
 };

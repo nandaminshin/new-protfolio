@@ -9,17 +9,16 @@ const AboutMe = () => {
                 Crafting digital experiences with passion, precision, and purpose
             </p>
 
-            <div className="about-grid">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:grid-cols-2">
                 {/* Left Main Card */}
                 <div className="card main-card">
                     <h3 className="card-title">
-                        👋 Hello, I’m <span>Muhammad Ramazan</span>
+                        👋 Hello, I’m <span>Nanda Min Shin</span>
                     </h3>
                     <p className="highlight-text">
-                        A passionate <span className="gradient-text">Full Stack Developer</span>
+                        A passionate <span className="gradient-text">Software Engineer </span>
                         and <span className="gradient-text">AI enthusiast</span> with
-                        <span className="gradient-text"> 5+ years</span> of experience
-                        crafting digital experiences that users love.
+                        <span className="gradient-text"> 2+ years</span> of hand-on software development experience.
                     </p>
 
                     <p className="card-desc">
