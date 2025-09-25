@@ -11,8 +11,7 @@ const Hero = () => {
 
             {/* Description */}
             <p className="hero-desc">
-                Crafting exceptional digital experiences with clean code and
-                thoughtful design
+                Building modern web applications with clean code, scalable architecture, and intuitive design
             </p>
 
             {/* Social Links */}
@@ -26,6 +25,8 @@ const Hero = () => {
                 <a href="mailto:test@example.com">
                     <Mail size={18} /> Email
                 </a>
+            </div>
+            <div className="social-links">
                 <a
                     href="/cv/NandaMinShinCV.pdf"
                     download

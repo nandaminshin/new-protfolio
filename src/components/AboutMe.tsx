@@ -22,30 +22,27 @@ const AboutMe = () => {
                     </p>
 
                     <p className="card-desc">
-                        I specialize in building scalable web and mobile applications using
-                        React, Next.js, TypeScript, and modern development technologies.
-                        I thrive on turning complex problems into elegant solutions.
+                        I mainly focus on full-stack Web Application Developnent including both frontend and backend using Node.js, Laravel, JavaScript, TypeScript, React, Next.js, MongoDB, MySQL and modern technologies.
                     </p>
                     <p className="card-desc">
-                        Beyond work, I love exploring emerging technologies, contributing
-                        to open-source projects, and mentoring aspiring developers. I
-                        believe in continuous learning and staying at the forefront of
-                        innovation.
+                        I’m constantly exploring new tools and frameworks and AI related technologies to expand my skill set and stay up to date with modern development practices. Beyond just coding, I like tackling real problems with practical solutions to benefit society and drive innovation to community.
                     </p>
 
                     {/* Core Technologies */}
-                    <h4 className="section-subtitle">🔥 Core Technologies</h4>
+                    <h4 className="mt-12 section-subtitle">🔥 Core Technologies</h4>
                     <div className="tags">
                         {[
-                            "AI Integration",
+                            "Laravel",
                             "React",
                             "Next.js",
                             "TypeScript",
                             "Node.js",
-                            "Python",
-                            "AWS",
+                            "Express.js",
+                            "Git",
                             "UI/UX Design",
-                            "Healthcare IT",
+                            "MongoDB",
+                            "MySQL",
+                            "NestJS"
                         ].map((tech) => (
                             <span key={tech} className="tag">
                                 {tech}
@@ -61,13 +58,13 @@ const AboutMe = () => {
                         <h4 className="section-subtitle">💬 Let’s Connect</h4>
                         <ul className="info-list">
                             <li>
-                                <Mail size={16} /> mramazan1@yahoo.com
+                                <Mail size={16} /> nandaminshin2019@gmail.com
                             </li>
                             <li>
-                                <Globe size={16} /> mramazan.dev
+                                <Globe size={16} /> https://who-is-nd.vercel.app
                             </li>
                             <li>
-                                <MapPin size={16} /> Islamabad, Pakistan
+                                <MapPin size={16} /> Da Nang, Vietnam
                             </li>
                         </ul>
                     </div>
@@ -77,13 +74,13 @@ const AboutMe = () => {
                         <h4 className="section-subtitle">🏆 Achievements</h4>
                         <ul className="info-list">
                             <li>
-                                <Star size={16} /> Top Rated on Upwork
+                                <Star size={16} /> Successfully contributed to ERP systems
                             </li>
                             <li>
-                                <Award size={16} /> Expert in AI Integration
+                                <Award size={16} /> Expert in Full-Stack Development
                             </li>
                             <li>
-                                <Briefcase size={16} /> 50+ Projects Delivered
+                                <Briefcase size={16} /> 3+ Open-source projects
                             </li>
                         </ul>
                     </div>

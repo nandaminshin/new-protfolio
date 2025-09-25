@@ -3,7 +3,7 @@ import { useState } from "react";
 interface Certificate {
     id: number;
     provider: string;
-    platform: string;
+    platformLogo: string;
     issued: string;
     title: string;
     skills: string[];
@@ -14,52 +14,52 @@ const certificates: Certificate[] = [
     {
         id: 1,
         provider: "NCC Education",
-        platform: "NCC",
+        platformLogo: "/images/Ncc_edu.png",
         issued: "June 2023",
         title: "Level 4 Diploma in Computing",
-        skills: ["Computing", "Software Engineering", "Databases"],
+        skills: ["Computer Networks", "Computer Systems", "Databases", "Web Development", "Object-Oritnted Programming", "Software Engineering", "Computing", "Project Management"],
         file: "/certificates/NCC_Level4_Diploma_In_Computing_NandaMinShin.pdf",
     },
-    {
-        id: 2,
-        provider: "IBM",
-        platform: "Coursera",
-        issued: "Jan 2023",
-        title: "DevOps Essentials",
-        skills: ["DevOps", "CI/CD", "Product Development"],
-    },
-    {
-        id: 3,
-        provider: "Meta",
-        platform: "Coursera",
-        issued: "Feb 2023",
-        title: "Backend Development Fundamentals",
-        skills: ["Backend Development", "APIs", "Databases"],
-    },
-    {
-        id: 4,
-        provider: "Google",
-        platform: "Coursera",
-        issued: "Mar 2023",
-        title: "Foundations of Cloud Computing",
-        skills: ["Cloud", "GCP", "Virtualization"],
-    },
-    {
-        id: 5,
-        provider: "AWS",
-        platform: "Coursera",
-        issued: "Apr 2023",
-        title: "AWS Solutions Architect",
-        skills: ["AWS", "Cloud Architecture", "Networking"],
-    },
-    {
-        id: 6,
-        provider: "Microsoft",
-        platform: "Coursera",
-        issued: "May 2023",
-        title: "Azure Fundamentals",
-        skills: ["Azure", "Cloud", "Virtual Machines"],
-    },
+    // {
+    //     id: 2,
+    //     provider: "IBM",
+    //     platform: "Coursera",
+    //     issued: "Jan 2023",
+    //     title: "DevOps Essentials",
+    //     skills: ["DevOps", "CI/CD", "Product Development"],
+    // },
+    // {
+    //     id: 3,
+    //     provider: "Meta",
+    //     platform: "Coursera",
+    //     issued: "Feb 2023",
+    //     title: "Backend Development Fundamentals",
+    //     skills: ["Backend Development", "APIs", "Databases"],
+    // },
+    // {
+    //     id: 4,
+    //     provider: "Google",
+    //     platform: "Coursera",
+    //     issued: "Mar 2023",
+    //     title: "Foundations of Cloud Computing",
+    //     skills: ["Cloud", "GCP", "Virtualization"],
+    // },
+    // {
+    //     id: 5,
+    //     provider: "AWS",
+    //     platform: "Coursera",
+    //     issued: "Apr 2023",
+    //     title: "AWS Solutions Architect",
+    //     skills: ["AWS", "Cloud Architecture", "Networking"],
+    // },
+    // {
+    //     id: 6,
+    //     provider: "Microsoft",
+    //     platform: "Coursera",
+    //     issued: "May 2023",
+    //     title: "Azure Fundamentals",
+    //     skills: ["Azure", "Cloud", "Virtual Machines"],
+    // },
 ];
 
 export default function Certifications() {
@@ -81,7 +81,7 @@ export default function Certifications() {
                     <div key={cert.id} className="cert-card">
                         <div className="cert-header">
                             <span className="provider">{cert.provider}</span>
-                            <span className="platform">{cert.platform}</span>
+                            <img src={cert.platformLogo} alt="" width={90} />
                         </div>
                         <h3>{cert.title}</h3>
                         <p className="issued">Issued: {cert.issued}</p>

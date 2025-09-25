@@ -1,4 +1,4 @@
-import { Globe, Code2, CheckCircle2, Rocket, Layers } from "lucide-react";
+import { HandHeart, Code2, CheckCircle2, Rocket, Lightbulb, Radio, AppWindowMac, Star, Cog, Timer, Package, Gamepad2, ShoppingBasket } from "lucide-react";
 
 export default function Project() {
     return (
@@ -18,31 +18,38 @@ export default function Project() {
                     {/* Top Section */}
                     <div className="project-top">
                         <div className="tags">
-                            {["Web Application", "Featured", "Live", "6 months", "Gaming Industry"].map(
-                                (tag) => (
-                                    <span key={tag} className="tag">
-                                        {tag}
-                                    </span>
-                                )
-                            )}
+
+                            <div className="flex gap-2 tag">
+                                <AppWindowMac color="#4dffff" /> <span className="text-base">Web Application</span>
+                            </div>
+                            <div className="flex gap-2 tag-yellow">
+                                <Star color="yellow" fill="yellow" /> <span className="text-base">Featured</span>
+                            </div>
+                            <div className="flex gap-2 tag-green">
+                                <Radio color="#33ff77" /> <span className="text-base">Live</span>
+                            </div>
+                            <div className="flex gap-2 tag-black">
+                                <Cog color="#ffb3ff" /> <span className="text-base">Learning Platform System</span>
+                            </div>
+                            <div className="flex gap-2 tag-black">
+                                <Timer /> <span className="text-base">5 Months</span>
+                            </div>
+
                         </div>
 
-                        <h3>Checkersvip.com</h3>
+                        <h3>Tritium Learning Platform</h3>
                         <p className="subtitle">
-                            Professional Online Checkers Platform
+                            Online Learning platform for multiple courses
                         </p>
                         <p className="description">
-                            A comprehensive multiplayer American checkers platform designed for
-                            competitive play with real-time communication capabilities. Currently
-                            undergoing official recognition process with the American Checkers
-                            Federation (ACF).
+                            Tritium is a full-stack learning platform built with the MERN stack (MongoDB, Express, React, Node.js), designed to provide a smooth and scalable online learning experience integrated with Socket.io for realtime communications.
                         </p>
 
                         <div className="buttons">
-                            <a href="#" className="btn secondary">
+                            <a href="https://github.com/nandaminshin/tritium" target="blank" className="btn secondary">
                                 <Code2 size={16} /> View Repository
                             </a>
-                            <a href="#" className="btn primary">
+                            <a href="https://tritium-three.vercel.app/" target="blank" className="btn primary">
                                 <Rocket size={16} /> Live Demo
                             </a>
                         </div>
@@ -51,29 +58,245 @@ export default function Project() {
                     {/* Bottom Section */}
                     <div className="project-bottom">
                         <div className="features">
-                            <h4><Layers size={16} /> Key Features</h4>
+                            <h4><Lightbulb size={36} fill="yellow" color="yellow" /> Key Features</h4>
                             <ul>
-                                <li><CheckCircle2 /> Real-time multiplayer gameplay with WebSocket</li>
-                                <li><CheckCircle2 /> Drag-and-drop game mechanics using DnDKit</li>
-                                <li><CheckCircle2 /> Live chat system with emoji support & moderation</li>
-                                <li><CheckCircle2 /> Tournament & player ranking system</li>
-                                <li><CheckCircle2 /> Spectator mode with live observation</li>
-                                <li><CheckCircle2 /> Responsive design for all devices</li>
-                                <li><CheckCircle2 /> Game replay and analysis tools</li>
-                                <li><CheckCircle2 /> Social features (friends, challenges)</li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Role-based access control with multiple user types and authority</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Subscription-based video streaming feature</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Admin dashboard for creating courses and uploading video lectures</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Super Admin dashboard for managing the plaftorm, users, currency and additional settings</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>User-friendly frontend built with React and custom styling for a clean, responsive interface</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Token-based authentication</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Secure backend powered by Express and MongoDB, handling authentication, course data, and media management</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Real-time client and server communication with Socket.io</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Data caching with TanStack Query</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Scalable design prepared for future features</span>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
 
                         <div className="deliverables">
-                            <h4><Globe size={16} /> Deliverables</h4>
+                            <h4><HandHeart size={36} color="#33ffff" /> Deliverables</h4>
                             <ul>
-                                <li><CheckCircle2 /> Production-ready web app</li>
-                                <li><CheckCircle2 /> Real-time multiplayer game engine</li>
-                                <li><CheckCircle2 /> User authentication & profile system</li>
-                                <li><CheckCircle2 /> Admin dashboard for moderation</li>
-                                <li><CheckCircle2 /> Tournament management system</li>
-                                <li><CheckCircle2 /> Responsive mobile interface</li>
-                                <li><CheckCircle2 /> Payment integration for premium features</li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Production-ready web app</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Fully functional learning management system</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Authentication and authorization system with role segregation</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Video upload and playback pipeline for course content delivery</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Responsive UI components optimized for both desktop and mobile devices</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Smooth and fresh user experience with Singal Page feature, Data Caching and Real-time communications</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Tech Stack */}
+                    <div className="tech-stack">
+                        <h4><Code2 size={16} /> Technology Stack</h4>
+                        <div className="tags">
+                            {[
+                                "React",
+                                "Lucide-React",
+                                "Tailwind CSS",
+                                "MongoDB",
+                                "Mongoose",
+                                "Express",
+                                "Socket.io",
+                                "REST API",
+                                "JWT Authentication",
+                                "DnD Kit",
+                                "TanStack Query",
+                                "Headless UI",
+                                "Vercel",
+                                "Render",
+                                "Heroicons",
+                                "Js-cookie"
+                            ].map((tech) => (
+                                <span key={tech} className="tag">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mt-24 project-card">
+                    {/* Top Section */}
+                    <div className="project-top-yellow">
+                        <div className="tags">
+
+                            <div className="flex gap-2 tag">
+                                <AppWindowMac color="#4dffff" /> <span className="text-base">Web Application</span>
+                            </div>
+                            <div className="flex gap-2 tag-yellow">
+                                <Star color="yellow" fill="yellow" /> <span className="text-base">Featured</span>
+                            </div>
+                            <div className="flex gap-2 tag-green">
+                                <Radio color="#33ff77" /> <span className="text-base">Live</span>
+                            </div>
+                            <div className="flex gap-2 tag-black">
+                                <Gamepad2 color="#ffb3ff" /><span className="text-base">Gaming & Knowledge</span>
+                            </div>
+                            <div className="flex gap-2 tag-black">
+                                <Timer /> <span className="text-base">1 Week</span>
+                            </div>
+
+                        </div>
+
+                        <h3>Search Pokémon</h3>
+                        <p className="subtitle">
+                            Search your favorite Pokémon with Search Pokémon
+                        </p>
+                        <p className="description">
+                            A responsive web application built with Next.js, TypeScript, and Tailwind CSS, designed to let users search for Pokémon and view detailed information in a clean, user-friendly interface
+                        </p>
+
+                        <div className="buttons">
+                            <a href="https://github.com/nandaminshin/search-pokemon" target="blank" className="btn secondary">
+                                <Code2 size={16} /> View Repository
+                            </a>
+                            <a href="https://search-pokemon-psi-orcin.vercel.app/" target="blank" className="btn primary">
+                                <Rocket size={16} /> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Bottom Section */}
+                    <div className="project-bottom">
+                        <div className="features">
+                            <h4><Lightbulb size={36} fill="yellow" color="yellow" /> Key Features</h4>
+                            <ul>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Search functionality with dynamic filtering for Pokémon by name</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Pokémon details page displaying stats, types, and abilities</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Responsive UI designed with Tailwind CSS for both desktop and mobile users</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>API integration with the public PokéAPI for real-time data fetching</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Optimized routing and server-side rendering via Next.js for performance and SEO</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>In-memory Data Caching with Apollo-client</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="deliverables">
+                            <h4><HandHeart size={36} color="#33ffff" /> Deliverables</h4>
+                            <ul>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Production-ready web app</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Fully functional Pokémon search engine with instant results</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Detail pages with structured Pokémon data</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Responsive layout ensuring usability across devices</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Reusable components built with React + TypeScript for scalability</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Integration with PokéAPI for reliable and up-to-date information</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Smooth and fresh user experience with Singal Page feature and In-memory Data Caching</span>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -84,16 +307,149 @@ export default function Project() {
                         <div className="tags">
                             {[
                                 "Next.js",
-                                "NextUI",
+                                "React",
+                                "Lucide-React",
                                 "Tailwind CSS",
-                                "DnDKit",
-                                "Fastify",
-                                "Redis",
-                                "Socket.io",
-                                "PostgreSQL",
-                                "Prisma",
-                                "JWT Authentication",
-                                "Stripe API",
+                                "GraphQL",
+                                "Apollo GraphQL",
+                                "PokéAPI",
+                                "Apollo Client",
+                                "TypeScript",
+                                "ts-jest",
+                                "Vercel",
+                            ].map((tech) => (
+                                <span key={tech} className="tag">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mt-24 project-card">
+                    {/* Top Section */}
+                    <div className="project-top-pink">
+                        <div className="tags">
+
+                            <div className="flex gap-2 tag">
+                                <AppWindowMac color="#4dffff" /> <span className="text-base">Web Application</span>
+                            </div>
+                            <div className="flex gap-2 tag-yellow">
+                                <Star color="yellow" fill="yellow" /> <span className="text-base">Featured</span>
+                            </div>
+                            <div className="flex gap-2 tag-black">
+                                <ShoppingBasket color="#ffb3ff" /><span className="text-base">ECommerce</span>
+                            </div>
+                            <div className="flex gap-2 tag-black">
+                                <Timer /> <span className="text-base">6 Months</span>
+                            </div>
+
+                        </div>
+
+                        <h3>Espresso</h3>
+                        <p className="subtitle">
+                            Cafe and bakery
+                        </p>
+                        <p className="description">
+                            A responsive web application built with HTML, CSS, JavaScript, Laravel and Bootstrap5, designed to serve as an eCommerce site for cafe and bakery in a clean, user-friendly interface
+                        </p>
+
+                        <div className="buttons">
+                            <a href="https://github.com/nandaminshin/search-pokemon" target="blank" className="btn secondary">
+                                <Code2 size={16} /> View Repository
+                            </a>
+                            <button disabled className="btn primary-disabled">
+                                <Rocket size={16} /> Live Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* Bottom Section */}
+                    <div className="project-bottom">
+                        <div className="features">
+                            <h4><Lightbulb size={36} fill="yellow" color="yellow" /> Key Features</h4>
+                            <ul>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Browse recipes, coffee, bread and drinks by category and add them to cart</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Create order with selected recipe</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Responsive UI designed with Bootstrap for both desktop and mobile users</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Cash On Delivery Payment</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Admin Dashboard to manage users, orders and products</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="deliverables">
+                            <h4><HandHeart size={36} color="#33ffff" /> Deliverables</h4>
+                            <ul>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Production-ready web app</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Fully functional modernized eCommerce for cafe and bakery business</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Order and order reply system with admin's message status</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Responsive layout ensuring usability across devices</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Integration with MySQL database and scalable database architecture</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Smooth and fresh user experience with Laravel's Blade engine</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Tech Stack */}
+                    <div className="tech-stack">
+                        <h4><Code2 size={16} /> Technology Stack</h4>
+                        <div className="tags">
+                            {[
+                                "Laravel",
+                                "JavaScript",
+                                "JQuery",
+                                "Bootstrap5",
+                                "Axios",
+                                "FontAwesome",
+                                "HTML5",
+                                "PHP",
+                                "MySQL",
+                                "XAMPP",
+                                "Eloquent ORM",
                             ].map((tech) => (
                                 <span key={tech} className="tag">
                                     {tech}

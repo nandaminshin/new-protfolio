@@ -17,6 +17,7 @@ const techs: Tech[] = [
     { name: "REST API", category: "Backend", level: "Expert", exp: "2 years exp", img: "/images/restapi.png" },
     { name: "GraphQL", category: "Backend", level: "Intermediate", exp: "0.5 years exp", img: "/images/graphql-seeklogo.svg" },
     { name: "Apollo GraphQL", category: "Backend", level: "Intermediate", exp: "0.5 years exp", img: "/images/apollo-seeklogo.svg" },
+    { name: "AXIOS", category: "Backend", level: "Expert", exp: "2.5 years exp", img: "/images/axios-seeklogo.svg" },
     { name: "Socket.io", category: "Backend", level: "Expert", exp: "1 years exp", img: "/images/socket-io-seeklogo.svg" },
     { name: "PHP", category: "Backend", level: "Expert", exp: "2.5 years exp", img: "/images/php-seeklogo.png" },
     { name: "Laravel", category: "Backend", level: "Expert", exp: "2.5 years exp", img: "/images/laravel-seeklogo.svg" },
@@ -25,6 +26,7 @@ const techs: Tech[] = [
     { name: "Jest", category: "Backend", level: "Intermediate", exp: "0.5 years exp", img: "/images/jest-seeklogo.svg" },
     { name: "Flask", category: "Backend", level: "Intermediate", exp: "1 years exp", img: "/images/flask-seeklogo.svg" },
     { name: "NPM", category: "Backend", level: "Expert", exp: "2 years exp", img: "/images/npm-node-package-manager-seeklogo.svg" },
+    { name: "Composer", category: "Backend", level: "Expert", exp: "2.5 years exp", img: "/images/composer-seeklogo.svg" },
     { name: "XAMPP", category: "Backend", level: "Expert", exp: "2.5 years exp", img: "/images/xampp-seeklogo.svg" },
     { name: "C#", category: "Backend", level: "Intermediate", exp: "1 years exp", img: "/images/c-sharp-c-seeklogo.svg" },
 
