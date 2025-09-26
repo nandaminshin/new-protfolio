@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
                 <input type="text" name="from_name" placeholder="Your Name" required />
                 <input type="email" name="reply_to" placeholder="Your Email" required />
                 <textarea name="message" placeholder="Your Message" required />
-                <button type="submit" className="btn-primary">Send Message</button>
+                <button type="submit" className="btn-primary">Send Email</button>
             </form>
             {success && <p className="status-message">{success}</p>}
         </section>
