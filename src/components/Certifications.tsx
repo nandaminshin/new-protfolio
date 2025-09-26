@@ -8,6 +8,7 @@ interface Certificate {
     title: string;
     skills: string[];
     file?: string; // pdf file for real certificate
+    status: string;
 }
 
 const certificates: Certificate[] = [
@@ -19,6 +20,7 @@ const certificates: Certificate[] = [
         title: "Level 4 Diploma in Computing",
         skills: ["Computer Networks", "Computer Systems", "Databases", "Web Development", "Object-Oritnted Programming", "Software Engineering", "Computing", "Project Management"],
         file: "/certificates/NCC_Level4_Diploma_In_Computing_NandaMinShin.pdf",
+        status: "completed",
     },
     {
         id: 2,
@@ -28,6 +30,7 @@ const certificates: Certificate[] = [
         title: "Level 5 Diploma in Computing",
         skills: ["Full Stack Development", "Agile Development", "Advanced Databases", "Mobile App Development", "Cloud Computing", "Cyber Security", "Data Structures & Algorithms", "Professionalism & Ethics", "Newtork Security", "System Analysis & Design"],
         file: "/certificates/coming-soon.jpg",
+        status: "in progress",
     },
     // {
     //     id: 3,
@@ -93,7 +96,7 @@ export default function Certifications() {
                                 </span>
                             ))}
                         </div>
-                        {cert.file ? (
+                        {cert.file && cert.status == 'completed' ? (
                             <button className="view-btn" onClick={() => setSelectedCert(cert)}>
                                 View
                             </button>
