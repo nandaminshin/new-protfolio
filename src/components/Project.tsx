@@ -355,7 +355,7 @@ export default function Project() {
                         </p>
 
                         <div className="buttons">
-                            <a href="https://github.com/nandaminshin/search-pokemon" target="blank" className="btn secondary">
+                            <a href="https://github.com/nandaminshin/cafeECommerce" target="blank" className="btn secondary">
                                 <Code2 size={16} /> View Repository
                             </a>
                             <button disabled className="btn primary-disabled">
