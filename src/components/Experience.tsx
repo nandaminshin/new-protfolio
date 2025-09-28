@@ -1,4 +1,4 @@
-import { Briefcase, Pickaxe, Calendar, Code2 } from "lucide-react";
+import { Briefcase, Pickaxe, Calendar, Code2, Brain } from "lucide-react";
 
 export default function Experience() {
     return (
@@ -78,26 +78,54 @@ export default function Experience() {
                         </div>
                     </div>
 
-                    {/* Experience 2 */}
-                    {/* <div className="experience-card">
+                    <div className="experience-card">
                         <div className="card-header">
                             <div className="icon-wrapper blue">
-                                <Briefcase size={24} />
+                                <Briefcase size={52} />
                             </div>
                             <div>
-                                <h3>HIMS Master Trainer / PACS Specialist</h3>
-                                <p className="company">Public Health Organization, Islamabad</p>
+                                <h1 className="text-3xl">High School Science Teacher</h1>
+                                <p className="company">Freelance</p>
                                 <p className="date">
-                                    <Calendar size={14} /> July 2019 — Present
+                                    <Calendar size={14} />2020 — 2024
                                 </p>
                             </div>
                         </div>
 
                         <p className="description">
-                            Spearheaded organizational transformation from paper-based manual systems to completely
-                            integrated HIMS and PACS (Picture Archiving and Communication System).
+                            Teaching Science subjects to high school students mainly focused on Chemistry and Physics, fostering a positive learning environment and helping students achieve academic success.
                         </p>
-                    </div> */}
+
+                        <div className="pt-4 achievements">
+                            <h4><Pickaxe size={20} /> Key Responsibilities</h4>
+                            <ul>
+                                <li className="flex pt-2">
+                                    <div className="flex gap-4">
+                                        <span className="rocket">🚀</span> <span>Taught high school students in Physics and Chemistry, helping students deepen understanding of scientific concepts and improve exam performance</span>
+                                    </div>
+                                </li>
+                                <li className="flex pt-2">
+                                    <div className="flex gap-4">
+                                        <span className="rocket">🚀</span> <span>Designed engaging lesson plans, breaking down complex theories into simple, practical examples</span>
+                                    </div>
+                                </li>
+                                <li className="flex pt-2">
+                                    <div className="flex gap-4">
+                                        <span className="rocket">🚀</span> <span>Built strong communication and mentoring skills while managing diverse student needs</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="mt-8 technologies">
+                            <h4><Brain size={36} /> Major Fields</h4>
+                            <div className="tags">
+                                {["Physics", "Chemistry", "Mathematic", "Nuclear Physics", "Industrial Chemistry", "Environmental Chemistry", "Mechanics", "Electricity and Magnetism"].map((tech) => (
+                                    <span key={tech} className="tag">{tech}</span>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
