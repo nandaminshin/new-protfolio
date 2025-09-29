@@ -28,7 +28,7 @@ const Hero = () => {
             </div>
             <div className="social-links">
                 <a
-                    href="/cv/NandaMinShinCV.pdf"
+                    href="/cv/nanda_min_shin.pdf"
                     download
                 >
                     <Download />
