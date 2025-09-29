@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail, Download } from "lucide-react";
 
 const Hero = () => {
     return (
-        <section className="hero">
+        <section id="overview" className="hero">
             {/* Name */}
             <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 tracking-tight pb-8">Nanda Min Shin</h1>
 

@@ -83,26 +83,30 @@ export default function Certifications() {
             <div className="cert-grid">
                 {certificates.map((cert) => (
                     <div key={cert.id} className="cert-card">
-                        <div className="cert-header">
-                            <span className="provider">{cert.provider}</span>
-                            <img src={cert.platformLogo} alt="" width={90} />
+                        <div className="cert-card-content">
+                            <div className="cert-header">
+                                <span className="provider">{cert.provider}</span>
+                                <img src={cert.platformLogo} alt="" width={90} />
+                            </div>
+                            <h3>{cert.title}</h3>
+                            <p className="issued">Issued: {cert.issued}</p>
+                            <div className="skills">
+                                {cert.skills.map((skill, i) => (
+                                    <span key={i} className="skill-tag">
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
-                        <h3>{cert.title}</h3>
-                        <p className="issued">Issued: {cert.issued}</p>
-                        <div className="skills">
-                            {cert.skills.map((skill, i) => (
-                                <span key={i} className="skill-tag">
-                                    {skill}
-                                </span>
-                            ))}
+                        <div className="cert-card-actions">
+                            {cert.file && cert.status == 'completed' ? (
+                                <button className="view-btn" onClick={() => setSelectedCert(cert)}>
+                                    View
+                                </button>
+                            ) : (
+                                <button className="view-btn disabled">View</button>
+                            )}
                         </div>
-                        {cert.file && cert.status == 'completed' ? (
-                            <button className="view-btn" onClick={() => setSelectedCert(cert)}>
-                                View
-                            </button>
-                        ) : (
-                            <button className="view-btn disabled">View</button>
-                        )}
                     </div>
                 ))}
             </div>
