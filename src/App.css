@@ -650,6 +650,12 @@ body {
     color: #fff;
 }
 
+.project-top-red {
+    background: linear-gradient(-45deg, #f700003d, #1100ff3c);
+    padding: 2rem;
+    color: #fff;
+}
+
 .project-top .tags {
     display: flex;
     flex-wrap: wrap;
@@ -693,6 +699,13 @@ body {
     padding: 0.3rem 0.75rem;
     border: solid 1px rgba(0, 242, 255, 0.992);
     border-radius: 9999px;
+}
+
+.project-top-red .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .project-top .tag-yellow {
@@ -771,6 +784,47 @@ body {
 }
 
 .project-top-yellow .description {
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+}
+
+.project-top-red .tag-yellow {
+    background: rgba(255, 251, 0, 0.177);
+    font-size: 0.75rem;
+    padding: 0.3rem 0.75rem;
+    border: solid 1px rgb(255, 251, 0);
+    border-radius: 9999px;
+}
+
+.project-top-red .tag-green {
+    background: rgba(0, 255, 13, 0.2);
+    font-size: 0.75rem;
+    padding: 0.3rem 0.75rem;
+    border: solid 1px rgb(0, 255, 13);
+    border-radius: 9999px;
+}
+
+.project-top-red .tag-black {
+    background: rgba(0, 0, 0, 0.113);
+    font-size: 0.75rem;
+    padding: 0.3rem 0.75rem;
+    border: solid 1px rgba(0, 242, 255, 0.992);
+    border-radius: 9999px;
+}
+
+.project-top-red h3 {
+    font-size: 1.75rem;
+    font-weight: 720;
+}
+
+.project-top-red .subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.project-top-red .description {
     margin-top: 1.2rem;
     font-size: 1.1rem;
     line-height: 1.6;

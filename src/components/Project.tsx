@@ -1,4 +1,4 @@
-import { HandHeart, Code2, CheckCircle2, Rocket, Lightbulb, Radio, AppWindowMac, Star, Cog, Timer, Package, Gamepad2, ShoppingBasket } from "lucide-react";
+import { HandHeart, Code2, CheckCircle2, Rocket, Lightbulb, Radio, AppWindowMac, Star, Cog, Timer, Package, Gamepad2, ShoppingBasket, BotMessageSquare } from "lucide-react";
 
 export default function Project() {
     return (
@@ -450,6 +450,131 @@ export default function Project() {
                                 "MySQL",
                                 "XAMPP",
                                 "Eloquent ORM",
+                            ].map((tech) => (
+                                <span key={tech} className="tag">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Project Card */}
+                <div className="mt-24 project-card">
+                    {/* Top Section */}
+                    <div className="project-top-red">
+                        <div className="tags">
+
+                            <div className="flex gap-2 tag">
+                                <AppWindowMac color="#4dffff" /> <span className="text-base">Web Application</span>
+                            </div>
+                            <div className="flex gap-2 tag-yellow">
+                                <Star color="yellow" fill="yellow" /> <span className="text-base">Featured</span>
+                            </div>
+                            <div className="flex gap-2 tag-green">
+                                <Radio color="#33ff77" /> <span className="text-base">Live</span>
+                            </div>
+                            <div className="flex gap-2 tag-black">
+                                <BotMessageSquare color="#ffb3ff" /><span className="text-base">AI Chat Bot</span>
+                            </div>
+                            <div className="flex gap-2 tag-black">
+                                <Timer /> <span className="text-base">1 Months</span>
+                            </div>
+
+                        </div>
+
+                        <h3>Gemini Chat Bot App</h3>
+                        <p className="subtitle">
+                            AI Chat Bot Application integrated with Google Gemini API
+                        </p>
+                        <p className="description">
+                            A responsive web application built with Next.js, TypeScript, Tailwind CSS, MongoDB and integrated with Google Gemini API and Google OAuth to provide users with an interactive AI chat bot experience
+                        </p>
+
+                        <div className="buttons">
+                            <a href="https://github.com/nandaminshin/Gemini-Chat-Bot-App" target="blank" className="btn secondary">
+                                <Code2 size={16} /> View Repository
+                            </a>
+                            <a href="https://nd-gemini-chat-bot-app.vercel.app/" target="blank" className="btn primary">
+                                <Rocket size={16} /> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Bottom Section */}
+                    <div className="project-bottom">
+                        <div className="features">
+                            <h4><Lightbulb size={36} fill="yellow" color="yellow" /> Key Features</h4>
+                            <ul>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Chatting feature with Google Gemini 2.5 flash model using free API key</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Sign in wiht Google using OAuth authentication provided by Google</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Storing conversation history for each user using MongoDB</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>Unlimited usage</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><CheckCircle2 size={18} color="rgba(18, 18, 40, 0.581)" fill="#33ff77" /></span><span>User-friendly frontend built with Next.js and custom styling for a clean, responsive interface</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="deliverables">
+                            <h4><HandHeart size={36} color="#33ffff" /> Deliverables</h4>
+                            <ul>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Production-ready web app</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Fully functional real time AI Chat Bot App</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Secure authentication with Google OAuth</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2">
+                                        <span><Package size={24} fill="#ff1aff" color="rgba(18, 18, 40, 0.581)" /></span><span>Smooth and fresh user experience with Singal Page feature</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Tech Stack */}
+                    <div className="tech-stack">
+                        <h4><Code2 size={16} /> Technology Stack</h4>
+                        <div className="tags">
+                            {[
+                                "Next.js",
+                                "Lucide-React",
+                                "Tailwind CSS",
+                                "TypeScript",
+                                "Google Gemini API",
+                                "Google OAuth",
+                                "MongoDB",
+                                "Mongoose",
+                                "Vercel",
                             ].map((tech) => (
                                 <span key={tech} className="tag">
                                     {tech}
