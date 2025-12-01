@@ -22,7 +22,7 @@ const Hero = () => {
                 <a href="https://www.linkedin.com/in/nanda-min-shin-322a90315/" target="_blank" rel="noreferrer">
                     <Linkedin size={18} /> LinkedIn
                 </a>
-                <a href="mailto:nandaminshin2019@gmail.com">
+                <a href="mailto:nandaminshinfromnowhere@gmail.com">
                     <Mail size={18} /> Email
                 </a>
             </div>
