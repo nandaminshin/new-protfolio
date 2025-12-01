@@ -58,7 +58,7 @@ const AboutMe = () => {
                         <h4 className="section-subtitle">💬 Let’s Connect</h4>
                         <ul className="info-list">
                             <li>
-                                <Mail size={16} /> nandaminshin2019@gmail.com
+                                <Mail size={16} /> nandaminshinfromnowhere@gmail.com
                             </li>
                             <li>
                                 <Globe size={16} /> https://who-is-nd.vercel.app
