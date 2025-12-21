@@ -22,7 +22,7 @@ const AboutMe = () => {
                     </p>
 
                     <p className="card-desc">
-                        I mainly focus on full-stack Web Application Developnent including both frontend and backend using Node.js, Laravel, JavaScript, TypeScript, React, Next.js, MongoDB, MySQL and modern technologies.
+                        I mainly focus on full-stack Web Application Developnent including both frontend and backend using Node.js, Laravel, JavaScript, TypeScript, Golang, React, Next.js, MongoDB, MySQL and modern technologies.
                     </p>
                     <p className="card-desc">
                         I’m constantly exploring new tools and frameworks and AI related technologies to expand my skill set and stay up to date with modern development practices. Beyond just coding, I like tackling real problems with practical solutions to benefit society and drive innovation to community.
@@ -37,6 +37,7 @@ const AboutMe = () => {
                             "Next.js",
                             "TypeScript",
                             "Node.js",
+                            "Golang",
                             "Express.js",
                             "Git",
                             "UI/UX Design",

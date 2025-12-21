@@ -14,6 +14,7 @@ const techs: Tech[] = [
     { name: "Python", category: "Backend", level: "Intermediate", exp: "1 years exp", img: "/images/python-seeklogo.svg" },
     { name: "Express", category: "Backend", level: "Expert", exp: "2 years exp", img: "/images/express-js.webp" },
     { name: "NestJS", category: "Backend", level: "Expert", exp: "1 years exp", img: "/images/nest-js-icon.png" },
+    { name: "Golang", category: "Backend", level: "Expert", exp: "1 years exp", img: "/images/Go.svg" },
     { name: "REST API", category: "Backend", level: "Expert", exp: "2 years exp", img: "/images/restapi.png" },
     { name: "GraphQL", category: "Backend", level: "Intermediate", exp: "0.5 years exp", img: "/images/graphql-seeklogo.svg" },
     { name: "Apollo GraphQL", category: "Backend", level: "Intermediate", exp: "0.5 years exp", img: "/images/apollo-seeklogo.svg" },
