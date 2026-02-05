@@ -29,8 +29,8 @@ const certificates: Certificate[] = [
         issued: "coming soon",
         title: "Level 5 Diploma in Computing",
         skills: ["Full Stack Development", "Agile Development", "Advanced Databases", "Mobile App Development", "Cloud Computing", "Cyber Security", "Data Structures & Algorithms", "Professionalism & Ethics", "Newtork Security", "System Analysis & Design"],
-        file: "/certificates/coming-soon.jpg",
-        status: "in progress",
+        file: "/certificates/NCC_Level5_Diploma_In_Computing_NandaMinShin.pdf",
+        status: "completed",
     },
     // {
     //     id: 3,
