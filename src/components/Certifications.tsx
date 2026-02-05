@@ -26,7 +26,7 @@ const certificates: Certificate[] = [
         id: 2,
         provider: "NCC Education",
         platformLogo: "/images/Ncc_edu.png",
-        issued: "coming soon",
+        issued: "27 October 2025",
         title: "Level 5 Diploma in Computing",
         skills: ["Full Stack Development", "Agile Development", "Advanced Databases", "Mobile App Development", "Cloud Computing", "Cyber Security", "Data Structures & Algorithms", "Professionalism & Ethics", "Newtork Security", "System Analysis & Design"],
         file: "/certificates/NCC_Level5_Diploma_In_Computing_NandaMinShin.pdf",
