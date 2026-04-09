@@ -10,7 +10,7 @@ const Footer = () => {
                     LinkedIn
                 </a>
                 <a
-                    href="/cv/nanda_min_shin.pdf"
+                    href="/cv/Nanda_Min_Shin.pdf"
                     download
                 >
                     Download CV
